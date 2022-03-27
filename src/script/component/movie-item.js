@@ -54,11 +54,11 @@ class MovieItem extends HTMLElement {
                  }
   
              </style>
-             <img class="poster-movie" src="${this._movie.moviePoster}" alt="Movie Poster">
+            <img class="poster-movie" src="https://image.tmdb.org/t/p/w780${this._movie.poster_path}" alt="Movie Poster">
              <div class="movie-info">
                  <h1>${this._movie.name}</h1>
-                 <h4>${this._movie.rate}</h4>
-                 <p>${this._movie.description}</p>
+                 <h4>${this._movie.vote_average}</h4>
+                 <p>${this._movie.overview}</p>
              </div>`;
   }
 }
